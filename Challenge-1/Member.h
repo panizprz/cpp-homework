@@ -12,6 +12,7 @@ private:
 	short borrowedBooks;
 public:
 	Member(const std::string&, int, short);
+	~Member();
 
 	//getter
 	short getBorrowedBooks() const;
