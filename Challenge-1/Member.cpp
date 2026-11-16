@@ -4,6 +4,9 @@ Member::Member(const std::string& fullname, int membershipID, short borrowedBook
 
 
 }
+Member::~Member(){
+	
+}
 
 void Member::displayMemberInfo() const {
 	std::cout << "\nFullName: " << fullName << std::endl;
