@@ -3,6 +3,9 @@
 PremiumMember::PremiumMember(const std::string& name, int id, short books) : Member(name, id, books), rewardPoints(0) {
 
 }
+PremiumMember::~PremiumMember() {
+	
+}
 
 int PremiumMember::calcReward()  {
 	rewardPoints = getBorrowedBooks() * 10;
